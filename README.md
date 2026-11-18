@@ -4,7 +4,7 @@
 
 A **mobile-first, performance-tuned fork** of [DeepSeek's official chat-demo](https://github.com/deepseek-ai/chat-demo) (v0.1.1). The upstream project is an excellent static chat UI; this fork keeps its MIT license and its no-backend design, and focuses on something the demos don't cover: **what happens after you actually use it every day with hundreds of long conversations and large attachments**.
 
-[Live demo](https://cynthiaexingyi.github.io/chat-demo-mobile/) · [What changed and why](DEVELOP.md) · [MIT](LICENSE)
+[Live demo](https://cynthiayexingyi.github.io/chat-demo-mobile/) · [What changed and why](DEVELOP.md) · [MIT](LICENSE)
 
 > This is an unofficial community fork. It is not affiliated with or endorsed by DeepSeek. You supply your own API key; requests go from your browser straight to the API service you configure (default `https://api.deepseek.com`).
 

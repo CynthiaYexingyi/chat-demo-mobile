@@ -4,7 +4,7 @@
 
 基于 [DeepSeek 官方 chat-demo](https://github.com/deepseek-ai/chat-demo) v0.1.1 的**手机优先、性能向**改造版。上游是一个很优秀的静态聊天界面；本 fork 沿用它的 MIT 协议与无后端设计，专攻官方 demo 没覆盖的场景：**当你真的天天在用、攒下几百个长会话和大附件之后会发生什么**。
 
-[在线体验](https://cynthiaexingyi.github.io/chat-demo-mobile/) · [改造过程与实测数据](DEVELOP.md) · [MIT](LICENSE)
+[在线体验](https://cynthiayexingyi.github.io/chat-demo-mobile/) · [改造过程与实测数据](DEVELOP.md) · [MIT](LICENSE)
 
 > 非官方社区 fork，与 DeepSeek 官方无关联。需自行填写 API Key；请求从你的浏览器直连你配置的 API 服务（默认 `https://api.deepseek.com`）。
 

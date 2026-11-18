@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/CynthiaYexingyi/chat-demo-mobile.git"
   },
-  "homepage": "https://cynthiaexingyi.github.io/chat-demo-mobile/",
+  "homepage": "https://cynthiayexingyi.github.io/chat-demo-mobile/",
   "type": "module",
   "scripts": {
     "dev": "rspack serve -c rspack.config.ts",

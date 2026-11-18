@@ -1,0 +1,124 @@
+.container {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-gutter: stable both-edges;
+  scrollbar-color: var(--scroll-color) transparent;
+}
+
+.scroll {
+  display: contents;
+}
+
+@media not all and (min-width: 768px) {
+  .container {
+    overflow: hidden;
+    scrollbar-gutter: auto;
+  }
+
+  .scroll {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scrollbar-color: var(--scroll-color) transparent;
+  }
+}
+
+/* 鼠标贴近右侧滚动条时浮出的提问目录，点一条跳到对应提问 */
+.outline {
+  position: fixed;
+  z-index: 30;
+  box-sizing: border-box;
+  width: 232px;
+  max-height: min(62vh, 480px);
+  overflow-y: auto;
+  padding: 8px;
+  border: 1px solid var(--dsw-alias-border-l2);
+  border-radius: 12px;
+  background: var(--dsw-specific-menu);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
+}
+
+.outlineTitle {
+  padding: 2px 6px 8px;
+  color: var(--dsw-alias-label-tertiary);
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.outlineItem {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--dsw-alias-label-secondary);
+  font: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.outlineItem:hover {
+  background: var(--dsw-alias-interactive-bg-hover);
+}
+
+.outlineItemActive {
+  background: var(--dsw-alias-interactive-bg-hover-accent);
+  color: var(--dsw-alias-label-primary);
+}
+
+.column {
+  width: calc(var(--message-list-max-width) - 2 * var(--message-list-padding-horizontal));
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+/* 展开更早的消息：贴在列表顶部，不抢正文视线 */
+.loadEarlier {
+  display: block;
+  margin: 8px auto;
+  padding: 6px 14px;
+  border: 1px solid var(--dsw-alias-border-l2);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--dsw-alias-label-caption);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.loadEarlier:active {
+  background-color: var(--dsw-alias-interactive-bg-hover);
+}
+
+/* 从搜索结果跳进来时，命中消息上方的标记 */
+.hitMarker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 4px;
+  color: var(--dsw-alias-brand-primary);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.hitMarker::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--dsw-alias-brand-primary);
+  opacity: 0.35;
+}

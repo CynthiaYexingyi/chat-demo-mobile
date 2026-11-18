@@ -1,0 +1,58 @@
+/* 附件回执：跟用量一样弱化显示，点开才占地方 */
+.receipt {
+  font-size: 11px;
+  line-height: 16px;
+  color: var(--dsw-alias-label-tertiary);
+  font-variant-numeric: tabular-nums;
+  user-select: text;
+}
+
+.receipt summary {
+  cursor: pointer;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.receipt summary::-webkit-details-marker {
+  display: none;
+}
+
+.receipt summary:hover {
+  color: var(--dsw-alias-label-secondary);
+}
+
+.detail {
+  max-width: 440px;
+  margin-top: 6px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: var(--dsw-alias-interactive-bg-hover);
+  word-break: break-all;
+}
+
+.section {
+  margin: 2px 0 4px;
+  font-weight: 600;
+}
+
+.section:not(:first-child) {
+  margin-top: 8px;
+}
+
+.file {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.quote {
+  margin: 4px 0;
+  padding-left: 8px;
+  border-left: 2px solid var(--dsw-alias-label-tertiary);
+  color: var(--dsw-alias-label-secondary);
+}
+
+.hint {
+  margin: 4px 0 0;
+  white-space: normal;
+}

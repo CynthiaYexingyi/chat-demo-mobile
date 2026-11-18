@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+dist-mods/
+dist-mods.prev/
+.pnpm-store/
+.cache/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+tmp/
+*.zip
